@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        
+        <form action="" class="formulario" id="formulario">
+              <!--Titulo-->
+            
+          <h1 class="form-tittle">Create new account</h1>
+            <!-- inputs name y surname -->
+        <div class="formulario__ns">
+			<!-- Grupo: name -->
+			<div class="formulario__grupo" id="grupo__name">
+				<label for="name" class="formulario__label">Name</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="name" id="name" placeholder="name">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre no puede tener numeros ni signos.</p>
+            </div>    
+
+                <!-- Grupo: Surname -->
+			<div class="formulario__grupo" id="grupo__surname">
+				<label for="surname" class="formulario__label">Surname</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="surname" id="surname" placeholder="Surname">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El surname no puede tener numeros.</p>
+            </div>   
+        </div> 
+        <!-- inputs country city -->
+        <div class="formulario__cc">
+                <!-- Grupo: Country -->
+			<div class="formulario__grupo" id="grupo__country">
+				<label for="country" class="formulario__label">Country</label>
+				<div class="formulario__grupo-input">
+					<input type="country" class="formulario__input" name="country" id="country" placeholder="Argentina">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">No coincide.</p>
+            </div>    
+
+                <!-- Grupo: City -->
+			<div class="formulario__grupo" id="grupo__city">
+				<label for="city" class="formulario__label">City</label>
+				<div class="formulario__grupo-input">
+					<input type="city" class="formulario__input" name="city" id="city" placeholder="Buenos Aires">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">no coincide.</p>
+            </div>  
+        </div>     
+        <div class="formulario__elp-tb">    
+                  <!-- Grupo: Email -->
+			<div class="formulario__grupo" id="grupo__email">
+				<label for="email" class="formulario__label">Email</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="email" id="email" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El email tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+
+            </div>   
+                  <!-- Grupo: Login -->
+			<div class="formulario__grupo" id="grupo__login">
+				<label for="login" class="formulario__label">Login</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="login" id="login" placeholder="login">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El login tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>   
+
+                  <!-- Grupo: Password -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="Password" class="formulario__label">Password</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="password" id="Password" placeholder="Password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error"><br> a. Debe tener entre 8 y 11 caracteres
+                   <br> b. Debe contener al menos una letra mayúscula y una minúscula.
+                  <br> c. Debe contener como máximo 4 caracteres numéricos.
+                  <br> d. Debe contener uno de los siguientes caracteres: ‘*’, ‘!’, ‘$’ o ‘#’.</p>
+            </div>   
+        </div>
+                <!-- Grupo: terminos y condiciones -->
+           
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        i agree to the Terms of Service and privacy
+                    </label>
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error:<b> Por favor rellena el registro correctamente</p>
+                    </div>
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Ok!</p>
+                    </div>
+                </div>
+           
+            </form>
+               
+    </main>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/5c7c79144c.js" crossorigin="anonymous"></script>
+</body>
+</html>
